@@ -1,0 +1,12 @@
+{
+  "member": {
+    "given_name": "Alex",
+    "family_name": "Nguyen",
+    "dob": "12/04/1990",
+    "contact": {
+      "email": "alex.nguyen@example.com"
+    },
+    "plan_code": "S",
+    "source": "MILKYWAY"
+  }
+}

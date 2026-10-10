@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../../tests/Membership.Functions.Tests/Membership.Functions.Tests.csproj" />
+  <Project Path="Membership.Functions.csproj" />
+</Solution>

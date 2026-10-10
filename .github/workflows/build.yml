@@ -1,0 +1,32 @@
+name: Build and test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore tests/Membership.Functions.Tests/Membership.Functions.Tests.csproj
+
+      - name: Build
+        run: dotnet build tests/Membership.Functions.Tests/Membership.Functions.Tests.csproj --configuration Release --no-restore
+
+      - name: Run tests
+        run: dotnet test tests/Membership.Functions.Tests/Membership.Functions.Tests.csproj --configuration Release --no-build --no-restore

@@ -1,0 +1,8 @@
+{
+  "firstName": "Alex",
+  "lastName": "Nguyen",
+  "dateOfBirth": "1990-04-12",
+  "email": "alex.nguyen@example.com",
+  "membershipType": "Single",
+  "registeredAt": "2026-06-01T09:00:00Z"
+}
