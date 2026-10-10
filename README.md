@@ -19,8 +19,11 @@ Requires Azure Functions Core Tools v4 and Azurite, available through Visual Stu
 
 Copy src/Membership.Functions/local.settings.json.example to local.settings.json in the same directory. Ensure Values.FUNCTIONS_WORKER_RUNTIME is set to dotnet-isolated.
 
-Visual Studio: Set Membership.Functions as the startup project and press F5.
-Command line: Start Azurite, then run func start from src/Membership.Functions.
+Visual Studio: 
+     Open src/Membership.Functions/Membership.Functions.slnx. 
+     Set Membership.Functions as the startup project and press F5.
+Command line: 
+     Start Azurite, then run func start from src/Membership.Functions.
 
 From the repository root:
 
